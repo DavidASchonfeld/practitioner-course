@@ -1,0 +1,77 @@
+-- AWS AI Practitioner exam - AIF - C01
+
+-- AI-focused certification, less on AWS Cloud itself
+
+-- Basic IT knowledge is helpful
+
+-- will cover 20+ AWS AI services.
+
+This coursE: learning by doing. Theory lectures + Hands-on 
+
+
+What this course is/is not
+
+Is Not:
+-- how to use ChatGPT
+-- how to use AI-related tools to generate images, music etc.
+-- broad landscape of AI
+-- deep dive on the AWS Cloud
+-- -- For that, you would use the "AWS Certified Cloud Practiioner Course" "AWS Certified Solutions Architect Solutions Course"
+
+Is:
+-- intended for IT professionals who want to learn about AI
+-- deep dive on AI Services offered by AWS
+-- intended to help you pass a technical certification administered by AWS
+
+About Lecturer:
+-- has 11+ AWS cerifications, built lots of stuff with AWS, and lots of instructors for AWS
+-- He posts his LinkedIn and social media and Github
+
+
+
+#######
+AWS Certification Journey:
+
+Foundational (aka Beginner):
+-- Cloud Practitioner
+-- AI Practitioner <- That's us, in this course
+
+Associate 
+Recommended: Prioer cloud/strong on-premises IT experience recommended
+-- Solutions Architect
+-- Developer
+-- SysOps Administrator
+-- Data engineer
+-- Machine Learning Engineer
+
+Professional
+Recommended: 2 years of prior AWS Cloud experience
+-- Solutions Architect
+-- DevOps Engineer
+
+Specialty
+Recommnded: Refer to each specific exam guide for each area
+-- Security
+-- Advanced Networking
+-- Machine Learning
+
+#######
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

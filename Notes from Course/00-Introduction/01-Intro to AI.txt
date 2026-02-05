@@ -1,0 +1,75 @@
+Introduction to AI
+aka Introduction to Artificial Intelligence
+
+
+Artificial Intelligence: field of comptuer science dedicated ot solving problems that we commonly associate with human intellignece
+Examples:
+-- Image Creation
+-- Image Recognition (Example: for Self-Driving Car)
+-- Speech-to-Text
+-- Learning
+
+
+How does AI work?
+
+-- Training Dataset
+Ex: lots of fruits
+A Data Scientist will train a model from that training Dataset
+
+Ex: Classification Algorithm:
+AI Model will place all the fruits onto the graph and label each grou
+Ex: Peaches, Bananas, Apples
+The data Scientist trains the AI model on how to classify each fruit for each type of fruit.
+
+User: We show to the AI Model a new image of an apple that the AI Model has never seen before.
+
+
+
+History of AI:
+-- 1950s: Birth of AI: Alan Turning proposes the Turing Test (the machine has intellignece if it is able to hnave a conversation with a human and fool the human into thinking that it is another human.)
+-- John McCarthy invents the term "Artificial Intelligence."
+
+-- 1970s: Expert Systems: The MYCIN System: An AI-Rule-based system to detect bacteria.
+
+-- 1990s: Machine Learning and Data Mining: Can now collect and organize data, and statistic al breakthroughs to start doing algorithms to do machine learning
+
+-- 1997: Deep Blue: IBM machine that can beat the World Champion Chess player.
+
+-- 2010s: Deep Learning Revolutions: Neural Networks and algorithms you see today in modern AI. Ex: 2016: Google's AlphaGo defeats Go World Champion.
+
+-- 2020s: Virtual assistants, autonomous vehicles and healthcare diagnostics, discussions on ethics and regulations
+
+
+AI Use Cases
+-- Transcribe and Translate spoken langauges
+-- playing humans in games (Ex: Chess, Go, Starcraft)
+-- Driving Cars, Flying Airplaces
+-- Speech Recognition and Generaiton
+-- Suggesting code for Developers
+-- Medical Diagnosis
+-- Automating Business Processes
+-- Fraud Detection
+
+
+AI Practical Example:
+IDP (Intelligent Document Processing)
+-- extract data from a receipt saved as a PDF file
+
+-- AI techniques leveraged
+---- Computer Vision (to see the image)
+---- Deep Learning
+---- Natural Language Processing (NLP)
+
+
+
+Artificial Intelligence Today:
+
+-- Artificial Intelligence: overall field
+----- Machine Learning: what we use to train the models
+-------- Deep Learning: We use Neural Networks
+----------- Generative AI (aka GenAI): You think of ChatGPT, Dall-E, etc.
+
+
+
+
+
