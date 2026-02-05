@@ -1,0 +1,121 @@
+Different Types of Cloud Computing
+
+
+-- Infrastructure as a Service (IaaS)
+---- Provide building blocks for cloud IT
+---- Provides networking, computers, data storage space
+---- Highest level of flexibility
+---- Easy parallel with traditional on-premises IT
+
+
+-- Platform as a Service (PaaS)
+---- removes the need for your organiztaion to maange the underlying infrastructure
+---- focus on the deployment and management of your applications
+
+
+-- Software as a Service (SaaS)
+---- completed product that is run and amanged by the service provider
+
+
+
+Let's compare them
+
+On-Premises:
+You'll have to manage everything
+-- Applications
+-- Data
+-- Runtime
+-- Middleware
+-- O/S
+-- Virtualization
+-- Services
+-- Storage
+-- Networking
+
+
+
+Infrastructure as a Service (IaaS)
+
+You Manage:
+-- Applications
+-- Data
+-- Runtime
+-- Middleware
+-- O/S
+AWS Manages:
+-- Virtualization
+-- Services
+-- Storage
+-- Networking
+
+
+
+Platform as a Service (PaaS)
+
+You Manage:
+-- Applications
+-- Data
+AWS Manages:
+-- Runtime
+-- Middleware
+-- O/S
+-- Virtualization
+-- Services
+-- Storage
+-- Networking
+
+
+Softare as a Service (SaaS)
+
+AWS Manages:
+-- Applications
+-- Data
+-- Runtime
+-- Middleware
+-- O/S
+-- Virtualization
+-- Services
+-- Storage
+-- Networking
+
+
+
+
+Examples of Cloud Computing Types:
+
+-- Infrastructure as a Service (IaaS):
+--- Amazon EC2 (on AWS) (that's why I learned in college to sue to publish/host websites)
+--- Azure, Rackspace, Digial Ocean, Linode, GCP (Google Cloud Platform, a subset of Google Cloud)
+
+-- Platform as a Service (PaaS):
+---- Elastic Beanstalk (on AWS)
+---- Heroku, Google App Engine (in Google Cloud Platform), Windows Azure (older version of Azure, Microsoft)
+
+-- Software as a Service:
+---- Many AWS services (ex: Rekognition for Machine Learning)
+---- Google Apps (Gmail), Dropbox, Zoom, etc.
+
+
+
+Pricing of the Cloud -- Quick Overview
+
+-- AWS has 3 pricing fundamentals, following the pay-as-you-go pricing model
+-- Compute:
+---- Pay for compute time
+-- Storage:
+---- Pay for data stored in the Cloud
+-- Data transfer OUT of the Cloud:
+---- Data transfer IN is free
+
+-- Solves the expensive issue of traditional IT
+
+
+
+s
+
+
+
+
+
+
+

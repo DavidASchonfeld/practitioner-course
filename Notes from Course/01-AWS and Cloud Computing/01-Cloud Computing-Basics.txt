@@ -65,7 +65,40 @@ The Five Characteristics of Cloud Computing
 
 Six Advantages of Cloud Computers
 
--- Trade capital expense (CAPEX) for operational expense (OPEX)
+-- Trade capital expense (CAPEX) for operational expense (OPEX).
+---- Pay On-Demand: don't own hardware
+---- Reduced Total Cost of Ownership (TCO) & Operational Expense (OPEX)
+---- So you don't own it (aka I assume "Capital Expense, CAPEX") and instead pay for Operational Expense OPEX aka paying for renting it.
+
+-- Benefit from massive economics of scale
+---- Prices are reduced as WS is more efficient due to large scale
+
+-- Stop guessing capacity
+---- Scale based on actual measured usage
+
+-- Increase speed and agility
+---- (because its all on-demand)
+
+-- Stop spending money running and maintaining data centers
+
+-- Go global in minutes: leverage the AWS global infrastructure.
+
+
+
+Problems Solved by the Cloud
+
+-- Flexibility: Change resource types when needed
+-- Cost-Effectiveness: pay as you go, for what you use
+-- Scalability: accomodate larger loads by making hardware stronger or adding additional nodes
+-- Elasticity: ability to scale out and scale-in when needed
+-- High availability and fault tolerance: build across data centers.
+
+
+
+
+
+
+
 
 
 
