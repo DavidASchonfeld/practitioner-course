@@ -1,0 +1,69 @@
+
+
+
+
+How do Websites Work? (A Review):
+Note: Yes, I know this already, but it's a nice review
+
+-- websites live on servers.
+----- Has an IP Address (same concept as a physical address)
+-- network aka the internet. connects clients to websites
+-- clients (aka each of us on our laptops through the internet browser)
+----- Has an IP Address (same concept as a physical address)
+
+
+What is in a Server:
+-- CPU - will be doing computations. 
+-- RAM (Memory): fast memory to allow us to store/retrieve information quickly.
+
+-- Data (aka Storage). For example: Files, Database (store data in structured way), etc.
+
+-- Network: Routers, Switch, DNS Server,
+
+
+IT Terminology:
+-- Network: a bunch of cables, routers and servers connected with each other
+-- Router: A networking device  that forwards data packets between computer networks. They know where to send your packets on the internet!
+-- Switch: Once your data packet arrives, it takes a packet and sends it ot the correct server/client on your network.
+
+
+Traditional IT Infrastrutuce
+
+-- used to have physical servers in their homes, garages etc. for their website(s).
+As your websites grow, you need more servers, so your home gets filled with servers.
+So you move your physical servers into a special room called a Data Center (room with all of your servers.) You scale up your Data Center by buying more servers.
+
+
+Problems with Traditional IT Approach
+-- pay for rent for the data Center
+-- pay for power supply, cooling, maintenance
+-- adding and replacing hardware takes time.
+-- scaling is limited. (If tomorrow, you need 10x more servers, that's hard to do really quickly)
+-- hire 24/7 team to monitor the infrastructure.
+-- How to deal with disasters? (earthquake, power shutdown, fire...)
+
+Can we externalize all this? Yes -> on the cloud (For Next lecture)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
