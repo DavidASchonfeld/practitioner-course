@@ -92,6 +92,9 @@ Problems Solved by the Cloud
 -- Scalability: accomodate larger loads by making hardware stronger or adding additional nodes
 -- Elasticity: ability to scale out and scale-in when needed
 -- High availability and fault tolerance: build across data centers.
+-- Agility: rapidly develop, test and launch software applications
+
+
 
 
 
