@@ -90,6 +90,104 @@ Tour of the AWS Console
 
 Note: Use the AWS Global Infrastructure page to check which resources are available in each region. That way, if you are following along in the class and need to use a specific resource and it is missing in your region, you can check this page to see which region(s) that resource is available in (and switch to using that region).
 
+Shared Responsibility Model Diagram
+
+-- In the Cloud: Your responsibility (as a customer of AWS)
+-- The Cloud Itself: AWS's responsibility.
+
+
+AWS Acceptable Use Policy
+Note: This is all very obvious, but I'm writing it down in case I need to know/list these specific descriptions for the exam
+-- No Illegal, Harmful, or Offfensive Use or Content
+-- No Security Violations
+-- No Network Abuse
+-- No E-Mail or Other Message Abuse
+
+
+
+Qs and Answers:
+Question 1) You only want to manage Applications and data. Which type of Cloud Computing model should you use?
+
+Answer: Platform as a Service (PaaS): 
+
+Question 2) What is the pricing model of Cloud Computing?
+
+Answer: Pay-as-you-go
+
+
+Question 3) Which Global Infrastructure identitiy is composed of 1+ discrete data centers with redundant power, networking, and connectivity, and are used to deploy infrastructure?
+Answer: Availabity Zones (the question above is the defintion of "Availablity Zones)
+
+
+NOT "Edge Locaitons". "Edge Locations": caching sites to deliver content to end users with lower latency. They are located in Availability Zones. They are not used to dpeloy infrastructure, but for aching content.
+
+Question 4) Which of the following is NOT one of the Five Characteristics?
+-- Rapid elasticity and scalability
+-- Multi-tenancy and resource pooling
+-- Dedicated Support Agent to help you deploy applications <- This is the answer
+-- On-demand self service
+
+Question 5)
+Which are the 3 pricing fundamentals of the AWS Cloud?
+
+Answer: Compute, Storage and Data transfer out the AWS Cloud
+
+Question 6) Which of the following options is NOT a point of consideration when choosing an AWS Region?
+-- Compliance with data governance
+-- Latency
+-- Capacity availabiltiy <- Answer
+-- Pricing
+
+Question 7) Which of the following is NOT an advantage of Cloud Computing?
+-- Trade capital expense (CAPEX) for operational expense (OPEX)
+-- Train your employees less <- Answer.
+-- Go global in minutes
+-- Stop spending money running and maintaing data centers.
+
+Question 8) AWS Regions are comprised of?
+-- Two or more Edge Loations
+-- One or more discrete data centers
+-- Three or more Availability Zones <-Answer
+
+Question 9: Whihc of the following services has a global scope?
+-- EC2
+-- IAM <- This is the answer since it manages all users and permissions (IAM stands for "Identity and Access Management").
+-- Lambda
+-- Rekognition
+
+Question 10:
+-- Rapidly develop, test and launch software applications
+-- Automatic and quick ability to acquire resources as you need them and release resources when you no longer need them
+-- on-demand availability of computer system resources, especially data storage (cloud storage) and computing power, without direct active management by the user <- Answer (Because we're talking about the defintion itself, not about the benefits)
+-- Change resource types when needed
+
+Question 11:
+What defines the distribution of responsibilities for security in the AWS Cloud?
+-- AWS Pricing Fundamentals
+-- The Shared Responsibility Model <- The Answer
+-- AWS Acceptable Use Policy
+-- The AWS Management Console
+
+
+Question 12: A company would liek to benefit from the advantages of the Public Cloud but would liek to keep sensitive assets in its own infrastructure. Which deployment model should the company use?
+-- Private Cloud
+-- Public Cloud
+-- Hybrid Cloud <- This is the answer.
+
+Question 13:
+What is NOT authorized to do on AWS according to the AWS Acceptable Use Policy?
+-- Building a gaming application
+-- Deploying a website
+-- Run analytics on stolen content <-Answer
+-- Backup your data
+
+
+Regarding AWS Costs:
+-- Side Note from Course: Using AWS AI Services is not free, so using it as part of this course will cost money.
+
+-- Let's go into AWS's "Billing and Cost Management" section to look at it.
+-- Besides checking your costs and the breakdown, you can set "Budgets", automatic notifications if your costs go over a certain amount.
+
 
 
 
