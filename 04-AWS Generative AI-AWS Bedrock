@@ -1,0 +1,76 @@
+Generative AI - AWS Bedrock
+
+
+What is Generative AI?
+-- subset of Deep Learning, which is a subset of Machine Learning, which is a subset of AI
+-- used to generate new data that is similar to the data it was trained on
+---- Text
+---- Image
+---- Audio
+---- Code
+---- Video
+
+
+[Training Data, Ex: Dog Images and Cartoon Images] -> [Generative Model]. Now it can identify a dog and a cartoon -> so now it can generate a cartoon dog
+
+
+
+Unlabeled Data --Pretrain-. Foundation Model
+(Very big and wide, can adopt to/ complete lots of tasks:
+Ex: 
+-- Text Generation
+-- Text Summarization
+-- Information Extraction
+-- Image Generation
+-- Chatbot
+-- Question Answering
+
+
+Foundation Model:
+-- To generate data, we must rely on a Foundation Model
+-- Foundation Models are trained on a wide variety of input data
+-- The models may cost tens of millions of dollars to train
+-- needs a huge amount of $ and data, only a few companies create their own foundation models.
+-- For ChatGPT, GPT-4o is the foundational model.
+-- There is a wide seleectino of Foundation Models from companies
+-- OpenAI
+-- Meta (Facebook)
+-- Amazon
+-- Google
+-- Anthropic
+
+Some foundation models are open-source (free: Meta, Google BERT) and others under a commercial lisense (OpenAI, Anthropic, etc...)
+
+
+Large Language Models (LLM)
+-- Type of AI designed to generate coherent human-like text
+-- One noteable example: GPT-4 (of ChatGPT, made by company OpenAI)
+-- trained on large corpus of text data
+-- usually very big models
+---- billions of parameters
+---- trained on books, articles, websites, other textual data
+-- Can perform language-related tasks
+---- translation, summarization
+---- question answering
+---- content creation
+
+Generative Language Models
+-- We usually interact with tyhe LLM by gfiving a prompt (For example: text string: "What is AWS?")
+-- Then, the model will everage all the existing content it has learned from to generate new content
+-- 
+**Non-deterministic:** the generated text may be different for every user that uses the same prompt.
+
+Why are the generated responses non-deterministic?
+Let's see what happens when you put in a prompt.
+Example Input Prompt: "After the rain, the streets were"
+After receiving the input,
+-- the LLM generates a list of potential words alongside probabilties
+ What is the next word that will probably be in this sentence?
+wet = 40%
+flooded = 25%
+slippery = 15%
+empty = 10%
+muddy = 5%
+clen = 3%
+blocked = 2%
+
