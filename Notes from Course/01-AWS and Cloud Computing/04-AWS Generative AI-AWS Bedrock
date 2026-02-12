@@ -62,7 +62,7 @@ Generative Language Models
 
 Why are the generated responses non-deterministic?
 Let's see what happens when you put in a prompt.
-Example Input Prompt: "After the rain, the streets were"
+Example Input Prompt: "After t              he rain, the streets were"
 After receiving the input,
 -- the LLM generates a list of potential words alongside probabilties
  What is the next word that will probably be in this sentence?
@@ -73,4 +73,35 @@ empty = 10%
 muddy = 5%
 clen = 3%
 blocked = 2%
+
+Here, we'll choose the word "flooded" (all done by the GenAI model).
+The same process for the following wrod, and then the next wrod etc.
+
+and = 30%
+with 20%
+but 15%
+from 12%
+
+So this is it is non-determinisitic. Because with calculating possibilities, it might not always give you the same result
+
+So for Images:
+Prompt:
+Generate a blue sky with white clouds and the word "Hello" written in the sky.
+
+Generate images from images"
+
+Ex: Turn this image into a Japanese Anime style
+
+Generate Text from Images:
+Describe how many apples you see in the picture
+[picture of 2 hands, 1 holding an apple, 1 holding an orange] -> Response: The picture shows one apple. The other fruit is an orange.
+
+
+Generative AI for Images from text Diffusion Models (Ex: Stable Diffusion)
+
+Picture      -----"Training: Forward diffusion process" (means: Add noise to image over time)
+Example: Picture of Cat 
+
+Now, when we want to generate an image, we do the opposite. "Reverse Diffusion Process": Start with noise, and then get less noise out of it to make the brand new image clearer (for example, a brand new image of a cat). And we do that over and over again. "Denoise it" over and over again until it becomes a clear image for output.
+
 
