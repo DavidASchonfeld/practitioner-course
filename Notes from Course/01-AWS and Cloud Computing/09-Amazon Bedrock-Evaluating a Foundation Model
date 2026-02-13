@@ -1,4 +1,96 @@
 Amazon Bedrock - Evaluating a Foundation Model
 
 
+Automatic Evaluation:
+
+-- Evaluate a model for quality conversational
+-- Built-in task types (Choose one of these)
+---- text summarization
+---- question and answer
+---- text classification
+---- open-ended text generation...
+-- Bring your own prompt dataset or use built-in curated prompt datasets
+-- Scores are calculated automatically\
+-- "Judge Model" scores the comparison between the generated answers (the ones generated from the model we are evaluating) and the benchmark answers (the ones we have provided) with certain statistical methods (For Example: BERTScore, FI...)
+
+Your own Prompt Dataset:
+Example: [Benchmark Questions] -> [Benchmark Answers] (What would be an ideal answer for your "Benchmark Question")
+We use a "Judge Model" to compare our "Benchmark Answers" with the generated Answers and score the comparison
+
+
+                       [Model to Evaluate] -> [Generated Answers]
+                     /                                          \
+[Benchmark Questions]                                    [Judge Model] -> [Grading Score]
+                     \                                         /
+                      [Benchmark Answers] --------------------           
+
+
+Benchmark Datasets
+-- Benchmark Datasets: curated collections of data designed specifically at evaluating the performacne of language models
+-- Wide range of topics, complexities, linguisitc phenomena
+-- Why use them? They're helpful to measure accuracy, speed and efficiency, scalability
+-- Some benchmark datasets allow you to very quickly detect any kind of bias and potential discrimination against a group of people
+-- You can also create your own benchmark dataset that is specific to your business
+
+
+
+Amazon Bedrock - Evaluating a Model - Human Evaluation
+-- choose a work team to evaluate
+---- employees of your company
+---- Subject-Matter Experts (SMEs)
+-- Define metris and how to evaluate
+---- thumbs up/down, ranking etc.
+-- Choose from Built-in task types (same list as "Automatic", for example: "text summarization", "Question/answer" etc.) or add a custom task
+
+
+Automatic Metrics to Evaluate an FM (Foundation Model)
+
+-- ROUGE (Recall-Oriented Understudty for Gisting Evaluation)
+--- (Red in French)
+---- Evaluating automatic summarization and machine translation systems
+---- ROUGE-N: measure the # of matching n-grams and between reference and generated text. (n-gram = word). AKA # of matching words.
+---- ROUGE-L: longest common subsequence (of words) shared between reference and generated text
+
+-- BLEU: Bilingual Evaluation Understudy
+--- (Blue in French)
+---- Evaluated the quality of generated text, especially for translations
+---- Considers both precision and penalizes too much brevity
+---- Looks at a combination of n-grams (1, 2, 3, 4)
+
+-- BERTScore
+---- Semantic (aka meaning) similarity between generated text
+---- Uses pre-trained BERT models (Bidrectional Encoder Representations from Transformers) to compare contextualized embeddings of both texts and computes the cosine similarity between them.
+---- Capable of capturing more nuance between the texts
+
+-- Perplexity: how well the model predicts the next token (lower is better/more accurate).
+
+[Visual Chart here on starting with customer data for shopping, feeding it through the evaluation metrics and then comparing it to the original customer etc.]
+
+
+
+Business Metrics to Evaluate a Model On
+
+-- User Satisfaction: gather users' feedback and asses their satisfaction with the model respones (Ex: user satisfaction for an ecommerce platform)
+
+-- Average Revenue per User (ARPU): average revenue per user attributed to the Gen-AI app (ex: monitor ecommerce user base revenue)
+
+-- Cross-Domain Performance: measure the model's ability to perform cross different domains tasks (Ex: Monitor multi-domain eccomerce platform). Is the model able to perform various tasks across various domains?
+
+-- Conversion Rate: generate recommended desired outcomes such as purchases (Ex: optimizing ecommerce platform for higher conversion rate). For example, how good is the Gen-AI model at making purchases on the website more likely?
+
+-- Efficiency: evaluate the model's efficiency in computation, resource utilization...(Ex: improve production line efficiency)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
