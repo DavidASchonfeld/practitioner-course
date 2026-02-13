@@ -1,0 +1,71 @@
+Amazon Bedrock - Foundational Model (FM)
+
+
+Amazon Bedrock - Base Foundation Model:
+
+-- How to choose?
+---- Model types, performance requirements, capabilities of the model, constraints of the model, compliance
+---- Level of custimization, model size, inference options, licensing agreements, context, windows, latency
+---- mulitmodal models (means: models that can take in varied types (images, audio, video, text) of inputs and outputs) 
+---- What's Amazon Titan?
+------ high-perofrming Foundation Models from AWS
+------ can do image, text, multimodal model choices via a fully-managed APIS
+------ can be customized with your own data
+---- smaller models are more cost-effective, but knows less things
+
+Example: Amazon Titan vs Llama vs Cladue vs Stable Diffusion
+(Chart that compares them), is visible around 5:00 in the video.
+(I'm only writing here parts of the chrart
+
+Max Tokens (means Max context window)
+Stabiliy Diffusion: Only for image generation
+Aamzon Titan can do text in +100 Langues
+Llama: large-scale tasks, dialogue only English
+Claude: high 
+
+Each model has a different pricing for you to use it.
+
+
+-------
+Foundation Model - Hands Only
+The test will want you to know what each model can/cannot perform.
+
+Ex: Haiku can do mainly text
+
+Note: There is a compare mode, where you can give 1 prompt and see the results for 2 
+
+
+Custom Modes
+-- on the left menu, you can also select "Custom models"
+
+Customizatoin Techniques:
+(From the AWS Descriptions, screenshoted/screenshared in the class lecture)
+Reinforcement fine-tuning
+- Build more accurate models using reward-based learning with less manual effort, ideal for omplex, multi-step, reasoning tasks.
+-- Step 1) Choose model
+-- Step 2) Add input data
+-- Step 3) Add reward function
+
+Supervised fine-tuning
+- Adapts pre-trained models to specific tasks using labeled data to improve perofrmance in specific domains
+-- Step 1) Choose model
+-- Step 2) Add input data
+
+Distillation
+- Creates smaller, faster models by using a large teacher model to train a specialized student model with your invocation logs or generated training data.
+-- Step 1) Choose teacher/student model
+-- Step 2) Add input data
+
+
+
+Click the "Create" button
+You choose which custommization technique 
+In the form, you choose
+-- which model you'd like to customized
+-- the hyperparameters (aka how you'd like to train your customized model. These are Machine Learning techniques, so the lecturer "won't go over them too much.")
+-- Input Data Location (Example, in Amazon S3 (AWS's cloud storage))
+-- Output Data Location (Example, in Amazon S3 (AWS's cloud storage))
+
+
+
+

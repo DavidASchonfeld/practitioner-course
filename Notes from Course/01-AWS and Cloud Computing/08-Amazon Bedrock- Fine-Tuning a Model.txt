@@ -1,0 +1,120 @@
+Amazon Bedrock - Fine-Tuning a Model
+
+
+
+Amazon Bedrock - Fine-Tuning a Model
+
+-- Adapt a copy of a foundation model with your own data
+-- Fine-tuning will change thwe weights of the base foundation model
+-- training data must:
+---- adhere to a specific format
+---- be stored in Amazon S3
+
+Note: Not all models can be fine-tuned (List of which models is available in the documentation)
+
+
+Supervised Fine-Tuning:
+-- Improves the performance of a model on specific tasks
+-- further trained on a particular field or area of knowledge
+-- Supervised Fine-Tuning uses **labeled examples** that are **input-output pairs**
+
+Example: {
+    "prompt": "Who is Stéphane Maarek?",
+    "completion": "He is the lecturer for this course and this sentence continues for a while."
+}
+
+
+Reinforcement Fine-Tuning
+-- Improves your FM (Foundation Model) using **feedback-based learning**
+-- You provide the input data (training data -- prompts)
+-- You define a Reward Function to evaluation responses (output) and judge which responses are good. (For example: scoring the responses 1 through 10.  )
+---- If we are using Objective Tasks (mathematical tasks, well-written code) -> Use AWS Lambda (with Python code) (AWS Lambda is a program that automatically runs on a set trigger)
+---- If we are using Subjective tasks -> Use another model to "judge" by providing evaluation instructions.
+
+-- Models learn iteratively from *reward functions output scores* and will try to achieve high scores over time
+
+
+Reinforcement Fine-Tuning: example:
+
+-- Example: technical customer support chatbot
+-- Sample customer prompt: "My app is running very slowly."
+-- Judge Model. Let's give the "Judge Model" instructions: "have empathy, and run diagnositics with user"
+Response 1: "Restart the app"
+-- Comment: Helpful but superficial
+---- Solves some cases
+---- No diagnositics
+---- No learning or trust built
+-- Score 5.0
+
+Response 2: "That sounds frustrating. I can help you figure this out. Before we troubleshoot, can you tell me when it started and what you were doing at the time?"
+-- Comment: Empathetic, diagnosistic, efficient
+---- Acknowledges user frustration
+---- Gather signal before acting
+---- Leads to faster, better resolution
+-- Score: 9.0
+
+Response: "Please open a support ticket and attach logs A, B, and C."
+-- Comment: Not helpful, creates friction
+---- Pushes work to the user
+---- Breaks conversational flow
+---- Poor experience for a simple issue
+-- Score: 2
+
+(The "Judge Model" would just give the score. The comments we added above would just be added by us to demonstrate this concept.)
+
+
+Supervised Fine Tuning 
+
+[Input Prompt] -> [Output Prompt]  
+  (Provided)        (Provided)
+
+
+Reinforcement Fine Tuning
+
+                 --->   [Output] (Score = 5.0)
+                 |     (generated)
+                 |    
+[Input Prompt] --|-->   [Output] (Score = 2.0)
+  (Provided)     |     (generated)
+                 |
+                 --->   [Output] (Score = 9.0)
+                       (generated)
+
+
+Distillation
+-- Making models smaller and faster
+-- up to 75% less expensive than original models
+-- decrease in accuragcy, but potentially acceptable
+-- larger (teacher) model **transfers knowledge** to a smaller (student) mode
+-- you provide input data (ex: prompt)
+-- Produces a lighter model with similar behavior to the original
+-- Focuses on **efficiency, speed, and cost reduction**
+
+
+[Data] -> [Larger Model] (We call it the "Teacher Model") -----[Distill]--> [Knowledge] ---[Transfer]--> [Smaller Model] (We call it the "Student Mode")
+
+
+Fine-Tuning: Good to Know
+
+-- Re-training an FM (Foundation Model) requires a higher budget
+-- "Supervised Fine-Tuning" is usually cheaper as computations are less intense and less data is usually required
+-- It also requires experienced ML (Machine-Learning) engineers to perform the task
+-- You must prepare the data, do the fine-tuning, evaluate the model
+-- Running a fine-tuned model is also more expensive.
+---- Option 1: Run the custom model "on-demand" (price per token)
+---- Option 2: Purchase provisioned throughput (billed per month)
+
+Fine-Tuning: Use Cases:
+-- a chatbot designed with a particular persona or tone, or geared towards a specific purpose (ex: assisting customers, crafting advertisements)
+-- training using more up-to-date information than what the language model previously accessed
+-- training with exclusive data (Ex: your historical emails or messages, records from customer service interactions)
+-- targeted use cases (Categorization, accessing accuracy)
+
+
+
+
+
+
+
+
+

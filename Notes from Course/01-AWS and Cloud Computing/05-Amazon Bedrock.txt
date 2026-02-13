@@ -1,0 +1,33 @@
+Amazon Bedrock
+
+
+-- Build Generative AI (Gen-AI) applications on AWS, has lots of Configurations to help you get what you want
+-- fully-managed service, no servers for you to manage.
+
+-- Keep control of all your data to train the model (the data never leaves your account)
+-- Pay-per-use pricing model
+-- unified APIs
+-- Leverage a wide array of foundation models
+-- out-of-the-box features: RAG, LLM Agents...
+-- Security, PRivacy, Governance, and Responsible AI features
+
+
+Amazon Bedrock - Foundation models
+-- Access to a wide range of Foundation Models (FM)
+-----Ex: AI21 labs, cohere, stability.ai, amazon, anthropic, Meta (aka Facebook), Mistral AI
+-- Amazon Bedrock makes a copy of the FM (aka of the Foundational Model), available only to you, which you can further fine-tune with your own data.
+-- None of your data is used to train the FM (aka none of your data is sent back to the FM, so your data stays in your account.)
+
+Amazon Bedrock
+[
+   [Foundational Models (FMs)]
+   [Interative Playground]
+   User interacts with the Interactive Playground.
+
+   Knowledge Bases (RAG)
+   Fine-tuning pulling our data from Amazon S3
+
+   All models have the same API (Amazon standardized it)
+]
+
+
