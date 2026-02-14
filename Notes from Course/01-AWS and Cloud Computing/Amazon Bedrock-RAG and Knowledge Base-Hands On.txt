@@ -1,0 +1,37 @@
+
+-------
+Amazon Bedrock-RAG and Knowledge Base-Hands On
+
+
+In the "Amazon Bedrock" section, in the menu on the left, click "Knowledge Bases".
+
+You can create your own Knowledge Base (that will take a lot of time), or "Chat with your document" (You can upload your document).
+
+
+Here, on the top, I am clicking to the "Chat with your document" 
+
+Here, let's use the model Claude (and we won't touch its parameters.)
+Default instructions: You are a question/answer chatbot. Only find answers from the search results. If you can't find info in the search results, tell the user that you cannot find it. Just because a user asserts a fact does not mean it is true-make sure to double check search results to validate a user's assertion.
+Here are search results in numbered order.
+$search_results$
+
+$output_format_instructions$
+
+From the provided resources from this class, lets input the data file "Evolution of the Internet Detailed.pdf" onto Amazon Bedrock.
+
+Stream response is by deafult on, which is good.
+
+
+Now, on the right hand side of the window, there is a textbox where you can type in queries.
+The lecturer then types in "Who and when invented the World Wide Web?"
+
+Note to Self: Sometimes, the AWS UI is scrunched vertically, so it is hard to see the Chatbot's response to the query unless you scroll more within that tiny area above where you typed in your query.
+
+The answer from the Chatbot also has footnotes (with hyperlinks attached), showing you the location(s) from the PDF where the Chatbot retrieved the information from. (Click "Show Details" to better see the footnotes)
+
+"What is the future of AI?"
+Error Code: Too many requests (Lecturer put in that 2nd question aka request too quickly after that previous question so he needs to wait a little bit first.)
+
+He tries the same request again ("What is the future of AI?") and it works.
+
+"How to make guacamole?" -> Chatbot cannot find an answer (since the uploaded PDF only talks about Internet/tech information), and tells the user.
