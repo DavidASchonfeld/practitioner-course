@@ -1,0 +1,64 @@
+Amazon Bedrock - RAG and Knowledge Base
+
+
+RAG = Retrieval-Augmented Generation
+Allows a Foundation Model to reference a data source outside of its training data (without being fine-tuned)
+-- Bedrock takes are of creating Vector Embeddings in the database of your choice based on your data. (In a later lecture, we'll learn about vector embeddings)
+-- use where real-time data is needed to be fed into the Foundation Model
+
+
+[User]-Who is John's Product Manager?->[AI] --Search for relevant information--> [Knowledge Base] <--Data Source---[Amazon S3 Data Storage]
+
+(Inside the [Knowledge Base] is a Vector Database)
+
+Retrieved Text:
+-- John Product Info:
+---- Support Contacts:
+---- Product Manager: Jessie Smith
+---- Engineer: Sara Ronald
+
+Query + Retrieved Text -> Foundation Model --generates response-> "Response: Jessie Smith is the Product MAnage
+
+This is why it is called "Retrieval-Augmented Generation", becuase we are augmenting the Foundation Model with outside information (aka the Knowledge Base).
+
+
+Ex: Use information for Air travel.
+
+
+
+Amazon Bedrock - 
+
+-- to store our index, we have our Vector Database
+Different Types to choose From:
+-- OpenSearch service
+-- Aurora
+-- Neptune Analytics
+-- S3 Vectors
+-- External Options
+---- MongoDB
+---- Redis
+---- Pinecone
+
+
+
+[Amazon S3] -> [Document Chunks] -> [Embeddings Model] (Ex: Amazon Titan, Cohere) -> Stored in "Vector Database"
+
+Vector Database: Choose Which Type:
+
+-- Amazon OpenSearch Service (Servrless & Managed Cluster):
+---- search & analytics database real time similarity queries, store millions of vector embeddings scalable index management, and fast nearest-neighbor (kNN) search capability
+
+-- Amazon Aurora PostgreSQL - relational database, proprietary on AWS
+
+
+
+
+
+
+
+
+
+
+
+
+

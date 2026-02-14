@@ -1,0 +1,30 @@
+Amazon Bedrock - Evaluating a Foundation Model - Hands Only
+
+In AWS, in the "Amazon Bedrock" section,
+click on "Evaluations"
+
+He left every option checked
+
+
+Evaluator Model: It evaluates the comparison results 
+Inference Model: (You can choose the Bedrock models) or you can bring your own inference respones from a model that lives outside of Bedrock.
+
+Metrics:
+Choose which metrics to chose (checkboxes for different options.). Ex: Helpfulness, Readability, etc.
+You can evaluate up to 2 models (at a time).
+
+Task Type: (Choose a model evaluation task type to determine the metrics recommended for evaluating the model's performance)
+-- (Same as listed in the notes from before):
+-- General text generation
+-- Text Summarization
+-- Question and Answer
+-- Text Classificaiton
+
+Evaluation Metrics:
+-- same as before
+
+
+
+
+
+

@@ -19,8 +19,9 @@ We use a "Judge Model" to compare our "Benchmark Answers" with the generated Ans
 
 
                        [Model to Evaluate] -> [Generated Answers]
+  (called "Inference Model" on AWS Bedrock's Website)
                      /                                          \
-[Benchmark Questions]                                    [Judge Model] -> [Grading Score]
+[Benchmark Questions]                                    [Judge Model] -> [Grading Score]                         (Called an "Evaluator Model" on AWS Bedrock's Website)
                      \                                         /
                       [Benchmark Answers] --------------------           
 
@@ -79,7 +80,6 @@ Business Metrics to Evaluate a Model On
 -- Conversion Rate: generate recommended desired outcomes such as purchases (Ex: optimizing ecommerce platform for higher conversion rate). For example, how good is the Gen-AI model at making purchases on the website more likely?
 
 -- Efficiency: evaluate the model's efficiency in computation, resource utilization...(Ex: improve production line efficiency)
-
 
 
 
