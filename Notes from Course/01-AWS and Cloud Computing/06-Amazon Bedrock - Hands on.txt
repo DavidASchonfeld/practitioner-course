@@ -2,12 +2,14 @@ Amazon Bedrock - Hands on
 
 
 
-
+"Chat/Text Playground"
 The "Model" Catalog (option on the left) has a list of all models available on Amazon Bedrock.
 
 We can click to the playground
 
 2 Modes: "Chat" or "Single Prompt"
 And you can switch between models
+
+There'a also an "Image/Video Playground" to generate images/videos.
 
 

@@ -67,5 +67,3 @@ In the form, you choose
 -- Output Data Location (Example, in Amazon S3 (AWS's cloud storage))
 
 
-
-
