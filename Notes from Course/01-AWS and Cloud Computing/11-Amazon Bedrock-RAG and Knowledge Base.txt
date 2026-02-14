@@ -44,11 +44,43 @@ Different Types to choose From:
 [Amazon S3] -> [Document Chunks] -> [Embeddings Model] (Ex: Amazon Titan, Cohere) -> Stored in "Vector Database"
 
 Vector Database: Choose Which Type:
+(Remember these at a high level for the exam)
 
--- Amazon OpenSearch Service (Servrless & Managed Cluster):
----- search & analytics database real time similarity queries, store millions of vector embeddings scalable index management, and fast nearest-neighbor (kNN) search capability
+-- Amazon OpenSearch Service (Options: Serverless & Managed Cluster):
+---- search & analytics database real time similarity queries, store millions of vector embeddings scalable index management, and fast nearest-neighbor (kNN) search capability (very scalable,) etc
 
 -- Amazon Aurora PostgreSQL - relational database, proprietary on AWS
+
+-- Amazon Neptune Analytics: if you want graph databae, use this option. graph database that enables high performance graph analytics and graph-baesd RAG (GraphRAG) solutions
+
+-- Amazon S3 Vectors: cost-effective and durable storage with sub-second query performance
+
+
+Amazon Bedrock - RAG Data Sources
+
+-- Amazon S3 (cloud directory)
+-- Confluence
+-- Microsoft SharePoint
+-- Salesforce
+-- Web pages (your website, your social media feed etc.)
+-- Amazon Bedrock will add more over time
+
+
+
+Amazon Bedrock - RAG - Use Cases
+
+-- Customer Service chatbot
+---- Knowledge Base: products, features, specifications, troubleshooting guides, and FAQs
+---- RAG Application: chatbot that can answer customer queries
+
+-- Legal Research and Analysis:
+---- Knowledge Base: Laws, regulations, case precendents, legal opiions, expert Analysis
+---- RAG application: Chatbot that can provide relevant information for specific legal queries
+
+-- Healthcare Question-Answering
+---- Knowledge base: diseases, treatments, clinical guidelines, research papers, patients...
+---- RAG application: chatbot that can answer complex medical queries
+
 
 
 
