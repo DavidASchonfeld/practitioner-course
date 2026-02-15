@@ -1,2 +1,142 @@
 Amazon Bedrock - RAG and Knowledge Base - Complete Setup - Hands On
 
+
+Let's create a knowledge base
+
+So we need to switch from the root user (what we are using now) to an IAM user (aka a non-root user).
+
+Let's go the IAM section by typing in IAM at the top.
+Now, in the IAM section, let's create a new user.
+
+We are going to provide to that new user Access to the AWS Management Console (this is a checkbox we check)
+
+User Type. 2 options
+-- Specify a user in Identity Center (Not using this now, lecturer will explain this later)
+-- I want to create an IAM User <-simple creation. We'll use this option for now
+
+Now for passwords, you can choose a custom password or have AWS autogerneate one for you, and can have the user be required to create a new password at sign-in. 
+
+
+Click Next
+
+
+Permissions Options:
+-- Lecturer is chosing "Attach policies directly"
+-- Let's just give him "Administrator Access" (aka full admin power)
+-- Create!
+
+Now we have a username/password and a special console sign-in url.
+
+We click on the link.
+The Account ID is autofilled, so we'll keep it as is, and log in.
+
+Now, let's go to the "Amazon Bedrock" section.
+
+Go to the lefthand menu and click "Knowledge Bases"
+
+Click "Create" -> "Knowledge Base with Vector Store"
+
+For "IAM Permissions", we'll select "Create and use a new service role
+Data Source: We choose "Amazon S3"
+If we wanted to choose a different data source, the other options are
+-- a Web Crawler
+-- 3rd Party Sources
+---- Confluence
+---- Salesforce
+---- Sharepoint
+
+Let's click "Next"
+
+Data Source Location
+-- This AWS account  <- what we are choosing.
+-- Other AWS account
+
+Now, before we finish, let's go to "Amazon S3" section (go to the top search bar at the top of AWS, type in Amazon S3)
+
+Now, let's create a bucket. Since we have no buckets right now, there's an easy obviou button in the center screen for "Create Bucket". Click it.
+
+Now, in the create bucket form, it will list the AWS region. Double check to make sure that region is still the same region that your current user was using/is in.
+
+Bucket names have to be unique through AWS.
+Even though only you/your accoutns/etc. can access your buckets, your bucket names have to be unique compared to all Amazon buckets.
+For example, you cannot use "test" as a bucket name since someone else already has a bucket called "test".
+
+Then, he scrolls all the way down (skips and therefore doesn't edit those other settings) and clikcs "Create Bucket"
+
+
+Now our bucket is created!
+
+
+
+
+Let's click on the bucket and upload things.
+
+Let's upload the file "Evolution of the internet_Detailed.pdf", which is included from the class resources folder (accessible to download from the class's Udemy page).
+
+Click "Upload", click "Add Files" and through the popup showing your local computer folders/files, select the file, click Ok. We're not going to go through settings here for Perimssions and Properties. Just click the "Upload" button on the bottom to finish the upload.
+
+
+
+
+Now, let's go back to "Amazon Bedrock"
+(again, by typing in from the top search bar "Amazon Bedrock") and let's continue our process from before.
+
+
+Because we hadn't opened a new tab when going to "Amazon S3" section, now that we return to "Amazon Bedrock" section, we need to start our process from before agian, whihc is fine, since it's easy/we remember what settings we want.
+
+Again, "Create knowledge base with vector store"
+Then,
+For IAM Permissions: "Create and use new service role" (Which is already the default option)
+For Data Source type: Select "Amazon S3"
+
+Then, click next.
+
+
+Data Source Location
+-- This AWS Account  <- We choose this one
+-- Other AWS Account
+
+Next to S3 URI, let's click "Browse S3" and then select the S3 bucket we just created.
+
+Scroll down (skip all of those settings), and click Next.
+
+Now, we have to choose the Embeddings Model.
+Embedding Model: how to convert our data into a vector
+
+Lecturer chooses the Amazon option (called "Amazon Titan")
+Lecturer doesn't touch the "Vector Dimensions" section. 
+
+Vector Database (called "Vector store")
+In the top area in this scetion, he just uses the default option of "Quick create a new vector store"
+"Vector Store Type":
+If I want all the way free, choose Pinecone (Their website pinecone.io), they have free tier (their website says you can use up to 2GB for free)
+Right now, the lecturer will use the Amazon option:
+"Vector engine for Amazon OpenSearch Serverless"
+Other Amazon option would be "Amazon Aurora"
+Side Note from Lecturer: New vector store options are available, but use OpenSearch Serverless for this hands on.
+
+Let's go to "Amazon OpenSearch Serverless" pricing. $0.24 per OCY per hour + paying for storage. (at time of lecture)
+In this class, we will immediately delete services after using them so they don't build up costs over the month.
+
+Now click "Next"
+Now, click "Create Knowledge Base"
+Note: You need to be an IAM user to click that button - otherwise, you will get an error.
+
+It will take a few seconds.
+
+
+Now, 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
